@@ -1,0 +1,38 @@
+/*Root*/
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+
+    /*Colours */
+    --navbar-color: hsl(284, 91%, 14%);
+    --beige: hsl(41, 49%, 90%);
+    --white: hsl(0, 0%, 100%);
+    
+    /*Font Weight*/
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-600: 600;
+    --fw-700: 700;
+    --fw-800: 800;
+}
+
+body {
+    font-family: 'Playfair Display', serif;
+}
+
+.header-section .top-header,
+footer{
+    background-color: var(--navbar-color);
+}
+
+.header-section .icon-box img{
+    width: 20%;
+    height: auto;
+}
+
+.segment-one {
+    background-color:var(--beige) ;
+}
+
+
+
+
