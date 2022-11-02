@@ -6,6 +6,9 @@
     --theme-color: hsl(284, 91%, 14%);
     --strong-gold: hsl(41, 27%, 61%);
     --light-purple: hsl(285, 15%, 59%);
+    --heavy-gold: hsl(41, 45%, 75%);
+    --a-link-blue: hsl(240, 100%, 50%);
+    --a-link-blue-hover: hsl(240, 97%, 35%);
     --beige: hsl(41, 49%, 90%);
     --white: hsl(0, 0%, 100%);
     
@@ -15,6 +18,9 @@
     --fw-600: 600;
     --fw-700: 700;
     --fw-800: 800;
+
+    --transition: 0.25s ease;
+    --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
 }
 
 /*Common Styles*/
@@ -25,16 +31,29 @@ body {
 
 a {
     text-decoration: none;
-    color: var(--white);
+    color: var(--theme-color);
 }
 
 a:hover {
     color: var(--white);
 }
 
+.play-fair-sc {
+    font-family: 'Playfair Display SC', serif;
+}
+
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*---------Header----------*/
-.header-section .top-header,
-footer{
+.top-header {
+    display: none;
+}
+
+.header-section .top-header{
     background-color: var(--theme-color);
 }
 
@@ -63,7 +82,14 @@ footer{
     width: 30%;
     height: auto;
 }
+
+.nav-item .active {
+    background-color: var(--beige);
+}
+
 /*-------------------------*/
+
+/*Segment One*/
 .segment-one,
 .our-awards-segment {
     background-color:var(--beige) ;
@@ -79,6 +105,7 @@ footer{
     font-family: 'Playfair Display', serif;
 }
 
+/*------Our Services--------*/
 .our-services-segment {
     background-color: var(--theme-color);
     color: var(--white);
@@ -87,16 +114,36 @@ footer{
 .services-icon-container {
     margin: 0px 100px;
 }
+/*--------------------------*/
 
+/*------Our Awards--------*/
 .our-awards-segment {
     background-color: var(--strong-gold);
     font-style: italic;
 }
+/*--------------------------*/
 
-.meet-our-doctors-segment h1 {
-    font-family: 'Playfair Display SC', serif;
-}
+/*------Our Doctors--------*/
+.our-doctors-card-container .card {
+    background-color: var(--light-purple);
+    margin: 2em 10em;
+    padding: 1.5em 0.5em 0.5em;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+.our-doctors-card-container  .card img {
+    width: 65%;
+    
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+.our-doctors-card-container  .card .card-title {
+    font-weight: 700;
+    font-size: 1.5em;
+  }
+/*--------------------------*/
 
+/*------Testimonails--------*/
 .testimonals-segment {
     background-color: var(--light-purple);
     color: var(--white);
@@ -106,26 +153,124 @@ footer{
     font-family: 'Playfair Display SC', serif;
     font-size: 50px;
 }
+/*--------------------------*/
 
+/*------Contact Us--------*/
 .contact-us-segment .form-container {
     background-color: var(--theme-color);
 }
 
-.play-fair-sc {
-    font-family: 'Playfair Display SC', serif;
-    font-size: 40px;
+.contact-us-segment .form-container h2 {
+    color: var(--heavy-gold);
+    font-weight: var(--fw-700);
+}
+
+.contact-us-segment .form-container form input[type=text],
+.contact-us-segment .form-container form input[type=email] {
+  width: 80%;
+  padding: 12px 5px;
+  margin: 10px 0px;
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+.contact-us-segment .form-container form textarea {
+    width: 80%;
+    height: 150px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+/*--------------------------*/
+
+.contact-us-segment .form-container a{
+    color: var(--a-link-blue);
+    text-decoration: underline;
+}
+
+.contact-us-segment .form-container a:hover{
+    color: var(--a-link-blue-hover);
 }
 
 .our-blog {
     background-color:var(--beige) ;
 }
 
+.map-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.map-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+
+}
+
+/*---------Footer-----------*/
+footer {
+    background-color: var(--theme-color);
+    color: var(--white);
+}
+
+footer .number-deco {
+    color: var(--white);
+}
+
 .footer-nav {
     background-color: var(--light-purple);
     color: var(--theme-color);
 }
+/*-------------------------*/
+
+/*Store Location*/
+.store-location-segment {
+    background-color: var(--heavy-gold);
+    color: var(--white);
+}
+
+/*Privacy Policy*/
+.privacy-policy-banner {
+    background-image: url(../assets/img/Banner.png);
+}
+
+.privacy-policy-banner h1{
+    font-weight: var(--fw-700);
+    font-size: 45px;
+    color: var(--white);
+}
+
+.privacy-policy-description {
+    background-image: url(../assets/img/PDPA.png);
+}
+
+.privacy-policy-description p{
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.privacy-policy-description a {
+    text-decoration: underline;
+    font-style: italic;
+}
 
 
+
+/*------Media Queries-------*/
+@media (min-width: 992px)  {
+    .top-header {
+        display: block;
+      }
+}
+/*-------------------------*/
 
 
 
