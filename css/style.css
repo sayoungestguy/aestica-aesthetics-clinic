@@ -1,12 +1,14 @@
 /*Root*/
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 :root {
 
     /*Colours */
     --theme-color: hsl(284, 91%, 14%);
     --strong-gold: hsl(41, 27%, 61%);
     --light-purple: hsl(285, 15%, 59%);
-    --heavy-gold: hsl(41, 45%, 75%);
+    --light-gold: hsl(41, 45%, 75%);
+    --heavy-gold: #DFCBA1;
     --a-link-blue: hsl(240, 100%, 50%);
     --a-link-blue-hover: hsl(240, 97%, 35%);
     --beige: hsl(41, 49%, 90%);
@@ -42,11 +44,32 @@ a:hover {
     font-family: 'Playfair Display SC', serif;
 }
 
+.spectral-sc {
+    font-family: 'Spectral SC', serif;
+}
+
 .img-center {
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-40 {
+    font-size: 40px;
+}
+
+.fs-50 {
+    font-size: 50px;
+}
+
 
 /*---------Header----------*/
 .top-header {
@@ -88,6 +111,15 @@ a:hover {
 }
 
 /*-------------------------*/
+/*---------Home Page----------*/
+.book-appointment-segment {
+    background-color: var(--heavy-gold);
+    color: var(--white);
+}
+
+.book-appointment-segment .form-container button{
+    background-color: var(--light-purple);
+}
 
 /*Segment One*/
 .segment-one,
@@ -103,6 +135,22 @@ a:hover {
 
 .segment-one h1 strong {
     font-family: 'Playfair Display', serif;
+}
+
+.segment-one-content-container {
+    margin: 70px 60px 0px;
+}
+
+.segment-one-content-container img {
+    width: 750px;
+    height: auto;
+}
+
+.segment-one-content-container .text-container p {
+    margin-bottom: 70px;
+}
+.segment-one-content-container .text-container hr {
+    margin-bottom: 70px;
 }
 
 /*------Our Services--------*/
@@ -121,15 +169,26 @@ a:hover {
     background-color: var(--strong-gold);
     font-style: italic;
 }
+
+.awards-img-container {
+    margin: 0px 40px;
+}
+
+.awards-img-container img{
+    width: 50%;
+    height: auto;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 /*--------------------------*/
 
 /*------Our Doctors--------*/
 .our-doctors-card-container .card {
     background-color: var(--light-purple);
-    margin: 2em 10em;
+    margin: 2em 5em;
     padding: 1.5em 0.5em 0.5em;
     text-align: center;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   }
 .our-doctors-card-container  .card img {
     width: 65%;
@@ -153,6 +212,12 @@ a:hover {
     font-family: 'Playfair Display SC', serif;
     font-size: 50px;
 }
+
+.testimonial-contianer span {
+    position: absolute;
+    transform: translate(-50%,50%);
+}
+
 /*--------------------------*/
 
 /*------Contact Us--------*/
@@ -262,7 +327,39 @@ footer .number-deco {
     font-style: italic;
 }
 
+/*Testimonials Page*/
+.testimonals-banner-image img {
+    position: relative;
+    text-align: center;
+    color: black;
+}
 
+.testimonals-banner-image .banner-title {
+    position: absolute;
+}
+
+.all-testimonials-segment {
+    background-color: #F2EAD9;
+    ;
+}
+
+.testimonials-card .card {
+    background-color:#F2EAD9;
+}
+
+.testimonials-card .card .card-text{
+    margin-right: 150px;
+}
+
+.all-testimonials-segment button {
+   background-color: var(--light-purple);
+   color: var(--white);
+}
+
+/*--------Profile Page-----------*/
+.doctor-patrick-profile-section {
+    background-color: var(--theme-color);
+}
 
 /*------Media Queries-------*/
 @media (min-width: 992px)  {
