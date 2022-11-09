@@ -26,6 +26,10 @@
 }
 
 /*Common Styles*/
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Playfair Display', serif;
     color: var(--theme-color);
@@ -70,6 +74,11 @@ a:hover {
     font-size: 50px;
 }
 
+.fs-55 {
+    font-size: 55px;
+    color: black;
+}
+
 
 /*---------Header----------*/
 .top-header {
@@ -108,6 +117,10 @@ a:hover {
 
 .nav-item .active {
     background-color: var(--beige);
+}
+
+.submit-btn {
+    background-color: var(--light-gold);
 }
 
 /*-------------------------*/
@@ -357,9 +370,73 @@ footer .number-deco {
 }
 
 /*--------Profile Page-----------*/
+
+
+/*------------Blog-------------*/
+.all-blog-segment .news-articles-segment .card:hover {
+    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
+  transform: translateY(-5px);
+}
+
+/*-----------------------------*/
+
+/*Profile*/
 .doctor-patrick-profile-section {
     background-color: var(--theme-color);
 }
+
+.doctors-profile-section .doctor-patrick-profile-section .banner {
+    position: relative;
+}
+
+.doctors-profile-section .doctor-patrick-profile-section .banner img {
+    position: absolute;
+}
+
+.doctors-profile-section .doctor-patrick-profile-section .banner .pic-display{
+    background-color: var(--light-purple);
+}
+
+.doctors-profile-section p {
+    font-size: 20px;
+}
+
+.achievements-list .qualifications ul,
+.achievements-list .committees ul {
+    list-style-type: none;
+    margin-left: 5px;
+    line-height: 45px;
+    font-size: 20px;
+}
+
+
+.achievements-list .area-of-specialization p{
+    text-align: right;
+    line-height: 40px;
+    margin-left: 20px;
+}
+
+.doctor-bob-profile-section {
+    background-color: #F2EAD9;
+    ;
+}
+
+.doctors-profile-section .doctor-bob-profile-section .banner {
+    position: relative;
+    color: black;
+}
+
+.doctors-profile-section .doctor-bob-profile-section .banner img {
+    position: absolute;
+    margin-left: 150px;
+}
+
+.doctors-profile-section .doctor-bob-profile-section .banner .pic-display{
+    background-color: var(--light-gold);
+}
+
+
+/*-----*/
 
 /*------Media Queries-------*/
 @media (min-width: 992px)  {
