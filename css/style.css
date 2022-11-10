@@ -147,15 +147,18 @@ a:hover {
 .carousell-container .banner-item .text-container-three {
     position: absolute;
     top: 30%;
-    left: 55%;
+    left: 45%;
     right: 10%;
 }
 
 .carousell-container .banner-item .text-container-four {
     position: absolute;
+    background-color: rgba(57, 55, 55, 0.7);
+    padding: 25px;
     color: white;
     top: 35%;
-    left: 55%;
+    left: 45%;
+    right: 10%;
 }
 
 .carousell-container .banner-item .text-container-five {
@@ -301,6 +304,20 @@ a:hover {
     transform: translate(-50%,50%);
 }
 
+.testimonals-segment button{
+    background-color: white;
+    color: black;
+}
+
+.join-our-newsletter-segment .form-container input {
+    background-color: var(--light-purple);
+}
+
+.join-our-newsletter-segment .form-container button {
+    background-color: var(--light-purple);
+    
+}
+
 /*--------------------------*/
 
 /*------Contact Us--------*/
@@ -417,7 +434,7 @@ footer .number-deco {
 
 .testimonials-banner-image img {
     width: 100%;
-    height: 600px;
+    height: 500px;
     margin-top: -100px;
 }
 
@@ -514,6 +531,27 @@ footer .number-deco {
     background-color: var(--light-gold);
 }
 
+/*----------Treatments--------------*/
+.featured-procedures-segment,
+.treatment-description
+ {
+    background-color:#8B6E46;
+    line-height: 45px;
+}
+
+/*Skin*/
+.skin-issues-description {
+    background-color:#F2EAD9;
+    line-height: 45px;
+}
+
+.treatment-description {
+    color: white;
+}
+
+.treatment-description img {
+    float: inline-end;
+}
 
 /*-----*/
 
