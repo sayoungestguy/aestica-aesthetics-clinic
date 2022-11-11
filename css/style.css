@@ -540,9 +540,28 @@ footer .number-deco {
 }
 
 /*Skin*/
-.skin-issues-description {
+.skin-issues-description,
+.how-it-works-banner {
     background-color:#F2EAD9;
     line-height: 45px;
+}
+
+.banner-image {
+    position: relative;
+}
+
+.banner-image img {
+    width: 100%;
+}
+
+.banner-image h1 {
+    position: absolute;
+    font-size: 50px;
+    color: white;
+    top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    
 }
 
 .treatment-description {
@@ -551,6 +570,51 @@ footer .number-deco {
 
 .treatment-description img {
     float: inline-end;
+    width: 100%;
+}
+
+.treatment-description .row .col .margin-custom {
+    padding-left: 100px;
+}
+
+.treatment-description .row .col .smaller-desc {
+    margin-left: 100px;
+    margin-right: 20px;
+}
+
+.treatment-description-2 .words-desc {
+    text-align: right;
+    float: inline-end;
+}
+
+.treatment-description-2 .words-desc table {
+    margin-left: auto;
+    margin-right: 50px;
+    text-align: left;
+}
+
+.treatment-description-2 .words-desc tr:nth-child(1) td:nth-child(2),
+.treatment-description-2 .words-desc tr:nth-child(2) td:nth-child(1){
+    background-color: rgb(154, 154, 154);
+    color: black;
+ }
+
+ .treatment-description-2 .words-desc tr:nth-child(1) td:nth-child(1),
+ .treatment-description-2 .words-desc tr:nth-child(2) td:nth-child(2){
+   background-color: rgb(30, 28, 28);
+   color: #ccc;
+}
+
+.how-it-works-banner .container .row img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100px;
+    height: auto;
+}
+
+.sylfirm-x-procedure-section{
+    line-height: 45px;
 }
 
 /*-----*/
