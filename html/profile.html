@@ -26,13 +26,13 @@
 
 <body>
     <!--Navigation Section-->
-    <header class="header-section sticky-lg-top">
+    <header class="header-section sticky-top sticky-lg-top">
         <div class="bottom-header">
 
             <nav class="navbar navbar-expand-lg bg-light shadow-lg">
                 <div class="container">
                     <a class="navbar-brand" href="../index.html">
-                        <img src="../assets/logo/aestica-logo-light-crop.png" width="175px" alt="Aestica">
+                        <img class="img-fluid" src="../assets/logo/aestica-logo-light-crop.png" width="175px" alt="Aestica">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
@@ -47,7 +47,7 @@
                             <li class="nav-item px-4">
                                 <a class="nav-link active" href="#">PROFILE</a>
                             </li>
-                            <li class="nav-item dropdown px-5">
+                            <li class="nav-item dropdown px-4">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                                     aria-expanded="false"><i class="bi bi-list"></i>
                                     SERVICES
@@ -77,14 +77,14 @@
     <!--Profile Section-->
     <section class="doctors-profile-section">
 
-        <div class="doctor-patrick-profile-section">
-            <div class="banner row text-white mx-lg-5 py-lg-5">
-                <div class="pic-display col mx-2">
-                    <img src="../assets/img/dr_patrick-simon-lao.jpg" alt="Dr Patrick Aesteria">
+        <div class="doctor-patrick-profile-section pt-3 pt-lg-0">
+            <div class="banner d-sm-block align-items-sm-end d-lg-flex text-white mx-lg-5 py-lg-5">
+                <div class="pic-display d-sm-block col-lg-6 mx-2">
+                    <img class="img-fluid" src="../assets/img/dr_patrick-simon-lao.jpg" alt="Dr Patrick Aesteria">
                 </div>
-                <div class="col description-box">
-                    <h1>Dr Patrick Smth</h1>
-                    <h3 class="description">(MBBS)</h3><br><br>
+                <div class="mx-3 mx-lg-0 col-lg-6 description-box">
+                    <h1 class="text-lg-start">Dr Patrick Smth (MBSS)</h1>
+                    <br><br>
                     <p>Dr Patrick Smth is a fully accredited Singapore plastic surgeon practising plastic surgery since
                         2005.<br><br>
                         After completing plastic surgery training in Singapore, Dr Kang was fellowship trained at the
@@ -149,10 +149,10 @@
             </div>
         </div>
         <div class="doctor-bob-profile-section">
-            <div class="banner row mx-lg-5 py-lg-5">
-                <div class="col description-box mx-lg-3">
-                    <h1>Dr Bob Smth</h1>
-                    <h3 class="description">(MBBS)</h3><br><br>
+            <div class="banner d-sm-block d-lg-flex py-5 mx-lg-5 py-lg-5">
+                <div class="col-lg-6 d-sm-block description-box mx-lg-3">
+                    <h1>Dr Bob Smth (MBSS)</h1>
+                    <br><br>
                     <p>Dr Patrick Smth is a fully accredited Singapore plastic surgeon practising plastic surgery since
                         2005.<br><br>
                         After completing plastic surgery training in Singapore, Dr Kang was fellowship trained at the
@@ -167,8 +167,8 @@
                         <li>Correct droopy eyelids, remove eyebags</li>
                     </ul>
                 </div>
-                <div class="pic-display col">
-                    <img src="../assets/img/dr-bob-tang-li-wei.jpg" alt="Dr Bob Smth Aesteria">
+                <div class="pic-display col-lg-6">
+                    <img class="img-fluid float-start float-lg-end" src="../assets/img/dr-bob-tang-li-wei.jpg" alt="Dr Bob Smth Aesteria">
                 </div>
             </div>
 
@@ -221,170 +221,160 @@
         </div>
 
     </section>
+    <!--Contact Us-->
     <section class="contact-us-segment">
         <h1 class="text-center pt-lg-2">Drop An </h1>
         <h1 class="play-fair-sc text-center pb-lg-2 text-uppercase">Enquiry</h1>
-        <div class="form-container py-lg-5">
+        <div class="form-container d-sm-block py-5 py-lg-3">
           <div class="container">
             <div class="bg-white rounded-5">
-              <div class="row">
-                <div class="col align-content-center text-lg-center">
-                  <img class="d-block img-center" src="../assets/logo/aestica-logo-light.png" alt="">
-                  <h3 class="d-block">AESTICA MEDICAL</h3>
-                  <p>Lorem Ipsum</p>
+              <div class="d-sm-block d-lg-flex row">
+                <div class="col-lg-6 align-content-center text-lg-center">
+                  <img class="d-block img-center img-fluid" src="../assets/logo/aestica-logo-light.png" alt="">
+                  <h3 class="d-block text-uppercase text-center">AESTICA MEDICAL Aesthetics Clinic</h3>
+                  <p class="text-center">2 Orchard Turn, #04-04, Singapore 238801</p>
                 </div>
-                <div class="col py-lg-5">
-                  <h2 class="text-uppercase play-fair-sc">Send Us An Enquiry</h2>
-                  <form class="" action="#">
-                    <input class="d-block" type="text" placeholder="Full Name">
-                    <input class="d-block" type="text" placeholder="Contact No.">
-                    <input class="d-block" type="email" placeholder="Email">
-                    <textarea class="d-block" placeholder="Message"></textarea>
-                    <button class="submit-btn rounded-5 text-center text-uppercase mt-2 px-5 py-2 text-white d-block" type="button">Submit</button>
+                <div class="col-lg-6 py-lg-5 text-center">
+                  <h2 class="text-uppercase play-fair-sc text-center text-lg-start">Send Us An Enquiry</h2>
+                  <form class="mx-2 mx-lg-0" action="#">
+                    <input class="d-block mx-auto mx-lg-0" type="text" placeholder="Full Name">
+                    <input class="d-block mx-auto mx-lg-0" type="text" placeholder="Contact No.">
+                    <input class="d-block mx-auto mx-lg-0" type="email" placeholder="Email">
+                    <textarea class="d-block mx-auto mx-lg-0" placeholder="Message"></textarea>
+                    <button class="submit-btn btn rounded-5 text-center text-uppercase mx-auto mx-lg-0 mt-2 px-5 py-2 text-white d-block"
+                      type="button">Submit</button>
                   </form>
-    
                 </div>
               </div>
             </div>
           </div>
           <p class="text-center text-white pt-5">Will be used in accordance with our
-            <a href="html/privacy-policy.html">Privacy Policy</a>.
+            <a href="../html/privacy-policy.html">Privacy Policy</a>.
           </p>
         </div>
       </section>
-    <!--Book Your Appointment Today!-->
-    <section class="book-appointment-segment py-lg-5">
-        <div class="container">
-            <div class="text-container spectral-sc mb-3">
-                <h1 class="text-uppercase fs-40">Book Your Consultation TODAY!</h1>
-            </div>
+     <!--Book your consultation-->
+  <section class="book-appointment-segment py-5 py-lg-5">
+    <div class="container">
+      <div class="text-container spectral-sc mb-3">
+        <h1 class="text-uppercase text-center text-lg-start fs-40">Book Your Consultation TODAY!</h1>
+      </div>
+      <div class="form-container justify-content-sm-evenly justify-content-lg-start">
+        <span class="description spectral-sc py-sm-2">Get started with an online consultation today by filling out quick
+          appointment form.</span>
+        <form class="d-sm-block d-lg-flex my-3 mx-auto my-lg-0 mx-lg-0 row" action="#">
+          <input class="col-lg-3 my-1 mx-lg-3" type="text" placeholder="Full Name">
+          <input class="col-lg-6 my-1 mx-lg-2 align-items-sm-center" type="email" placeholder="Email">
+          <button type="submit" class="text-center btn rounded-5 text-uppercase my-1 px-lg-2 py-lg-1 mx-lg-3 text-white col-lg-2">Book
+            Consultation</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
-            <div class="form-container">
-                <span class="description spectral-sc">Get started with an online consultation today by filling out quick
-                    appointment form.</span>
-                <form class="row" action="#">
-                    <input class="col mx-3" type="text" placeholder="Full Name">
-                    <input class="col-6 mx-2" type="email" placeholder="Email">
-                    <button type="submit" class="text-center text-uppercase px-2 py-1 col mx-3 text-white">Book
-                        Consultation</button>
-                </form>
-            </div>
-
+   <!--Footer -->
+  <footer class="text-center text-lg-start py-lg-5">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!--Grid row-->
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-12 mb-4 mb-lg-0 text-white">
+          <h5 class="text-uppercase mb-4">Where to find us</h5>
+          <ul class="list-unstyled mb-4">
+            <li>CBD Area</li>
+          </ul>
+          <h5 class="text-uppercase mb-4">Opening Hours</h5>
+          <ul class="list-unstyled mb-4">
+            <li>Mon - Fri:</li>
+            <li>Sat:</li>
+            <li>Sun: Closed</li>
+          </ul>
         </div>
-    </section>
+        <!--Grid column-->
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-12 mb-4 mb-lg-0 text-white">
+          <h5 class="text-uppercase mb-4">By Private Hire</h5>
+          <ul class="list-unstyled mb-4">
+            <li>CBD Area</li>
+          </ul>
+          <h5 class="text-uppercase mb-4">By MRT</h5>
+          <ul class="list-unstyled mb-4">
+            <li>Mon - Fri:</li>
+          </ul>
+          <h5 class="text-uppercase mb-4">By Car</h5>
+          <ul class="list-unstyled mb-4">
+            <li>Mon - Fri:</li>
+          </ul>
+        </div>
+        <!--Grid column-->
 
-    <!--Footer -->
-    <footer class="text-center text-lg-start py-lg-5">
-        <!-- Grid container -->
-        <div class="container p-4">
-            <!--Grid row-->
-            <div class="row">
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-12 mb-4 mb-lg-0 text-white">
-                    <h5 class="text-uppercase mb-4">Where to find us</h5>
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-12 mb-4 mb-lg-0 text-white">
+          <h5 class="text-uppercase mb-4">Gold Card</h5>
 
-                    <ul class="list-unstyled mb-4">
-                        <li>CBD Area</li>
-                    </ul>
-
-                    <h5 class="text-uppercase mb-4">Opening Hours</h5>
-
-                    <ul class="list-unstyled mb-4">
-                        <li>Mon - Fri:</li>
-                        <li>Sat:</li>
-                        <li>Sun: Closed</li>
-                    </ul>
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-6 mb-4 mb-lg-0 text-white">
-                    <h5 class="text-uppercase mb-4">By Private Hire</h5>
-
-                    <ul class="list-unstyled mb-4">
-                        <li>CBD Area</li>
-                    </ul>
-
-                    <h5 class="text-uppercase mb-4">By MRT</h5>
-
-                    <ul class="list-unstyled mb-4">
-                        <li>Mon - Fri:</li>
-                    </ul>
-
-                    <h5 class="text-uppercase mb-4">By Car</h5>
-
-                    <ul class="list-unstyled mb-4">
-                        <li>Mon - Fri:</li>
-                    </ul>
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-12 mb-4 mb-lg-0 text-white">
-                    <h5 class="text-uppercase mb-4">Gold Card</h5>
-
-                    <ul class="list-unstyled">
-                        <li>Gold Card Gain Points to climb to Gold Class, for amazing perks & deals!</li>
-                    </ul>
-                </div>
-                <!--Grid column-->
-                <div class="col-lg-3 col-md-12 mb-4 mb-lg-0 text-white">
-                    <img src="../assets/img/gold-card.png" alt="Pay with Gold Card">
-                </div>
+          <ul class="list-unstyled">
+            <li>Gold Card Gain Points to climb to Gold Class, for amazing perks & deals!</li>
+          </ul>
+        </div>
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-12 mb-4 mb-lg-0 text-white">
+          <img src="../assets/img/gold-card.png" alt="Pay with Gold Card">
+        </div>
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+    <div class="socials-row row py-1">
+      <div class="col-lg-4"></div>
+      <div class="description-box col-lg-4 row">
+        <div class="call-us-box col">
+          <a class="row" href="tel:67339771">
+            <i class="bi bi-telephone-fill text-white fa-3x col-sm-5"></i>
+            <div class="number-deco col-sm-7">
+              <span>Call Us At</span><br><span class="deco">6733 9771</span>
             </div>
-            <!--Grid row-->
+          </a>
         </div>
-        <!-- Grid container -->
-        <div class="socials-row row py-1">
-            <div class="col-lg-4"></div>
-            <div class="description-box col-lg-4 row">
-                <div class="call-us-box col">
-                    <a class="row" href="tel:67339771">
-                        <i class="bi bi-telephone-fill text-white fa-3x col-sm-5"></i>
-                        <div class="number-deco col-sm-7">
-                            <span>Call Us At</span><br><span class="deco">6733 9771</span>
-                        </div>
-                    </a>
-                </div>
-                <div class="social-media-icons col">
-                    <img class="p-1" src="../assets/logo/facebook.svg">
-                    <img class="p-1" src="../assets/logo/youtube.svg">
-                    <img class="p-1" src="../assets/logo/instagram.svg">
-                </div>
-            </div>
-            <div class="col-lg-4"></div>
+        <div class="social-media-icons col">
+          <img class="p-1" src="../assets/logo/facebook.svg">
+          <img class="p-1" src="../assets/logo/youtube.svg">
+          <img class="p-1" src="../assets/logo/instagram.svg">
         </div>
+      </div>
+      <div class="col-lg-4"></div>
+    </div>
 
-        <!--Footer Nav-->
-        <div class="footer-nav py-4">
-            <div class="container">
-                <div class="row mx-lg-5 text-center">
-                    <div class="nav-page col">
-                        <a class="text-uppercase" href="#">Home</a>
-                    </div>
-                    <div class="nav-page col">
-                        <a class="text-uppercase" href="#">Profile</a>
-                    </div>
-                    <div class="nav-page col">
-                        <a class="text-uppercase" href="#">Reviews</a>
-                    </div>
-                    <div class="nav-page col">
-                        <a class="text-uppercase" href="#">Blog</a>
-                    </div>
-                    <div class="nav-page col">
-                        <a class="text-uppercase" href="#">Contact</a>
-                    </div>
-                </div>
-            </div>
+    <!--Footer Nav-->
+    <div class="footer-nav py-4">
+      <div class="container">
+        <div class="row mx-lg-5 text-center">
+          <div class="nav-page col">
+            <a class="text-uppercase" href="../index.html">Home</a>
+          </div>
+          <div class="nav-page col">
+            <a class="text-uppercase" href="profile.html">Profile</a>
+          </div>
+          <div class="nav-page col">
+            <a class="text-uppercase" href="testimonials.html">Testimonials</a>
+          </div>
+          <div class="nav-page col">
+            <a class="text-uppercase" href="blog.html">Blog</a>
+          </div>
+          <div class="nav-page col">
+            <a class="text-uppercase" href="contact-us.html">Contact</a>
+          </div>
         </div>
-        <!-- Copyright -->
-        <div class="text-center pt-5 text-white">
-            Copyright© 2022 AESTICA AESTHETIC MEDICAL CLINIC PTE LTD.
-            <span class="mx-lg-2">ALL RIGHTS RESERVED.</span>
-            <a class="text-white text-decoration-underline" href="#">Privacy Policy</a>
-        </div>
-        <!-- Copyright -->
-    </footer>
+      </div>
+    </div>
+    <!-- Copyright -->
+    <div class="text-center pt-5 text-white">
+      Copyright© 2022 AESTICA AESTHETIC MEDICAL CLINIC PTE LTD.
+      <span class="mx-lg-2">ALL RIGHTS RESERVED.</span>
+      <a class="text-white text-decoration-underline" href="#">Privacy Policy</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
