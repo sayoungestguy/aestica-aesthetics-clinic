@@ -68,6 +68,7 @@ a:hover {
 
 .fs-40 {
     font-size: 40px;
+
 }
 
 .fs-50 {
@@ -77,6 +78,10 @@ a:hover {
 .fs-55 {
     font-size: 55px;
     color: black;
+}
+
+.lh {
+    line-height: 45px;;
 }
 
 
@@ -568,8 +573,8 @@ footer .number-deco {
     color: white;
 }
 
-.treatment-description img {
-    float: inline-end;
+.treatment-description img,
+.treatment-description-2 img  {
     width: 100%;
 }
 
@@ -605,6 +610,12 @@ footer .number-deco {
    color: #ccc;
 }
 
+.treatment-description-2 .crop-image {
+    width: auto;
+    height: 500px;
+    overflow: hidden;
+}
+
 .how-it-works-banner .container .row img {
     display: block;
     margin-left: auto;
@@ -617,13 +628,20 @@ footer .number-deco {
     line-height: 45px;
 }
 
+.featured-procedures-segment img {
+    width: 361px;
+    height: 257px;
+    overflow: hidden;
+}
+
 /*-----*/
 
 /*------Media Queries-------*/
 @media (min-width: 992px)  {
-    .top-header {
-        display: block;
-      }
+    .treatment-description-2 .crop-image {
+        height: 700px;
+        overflow: hidden;
+    }
 }
 /*-------------------------*/
 
