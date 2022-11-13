@@ -469,16 +469,6 @@ footer .number-deco {
 }
 
 /*--------Profile Page-----------*/
-
-
-/*------------Blog-------------*/
-.all-blog-segment .news-articles-segment .card:hover {
-    box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
-  transform: translateY(-5px);
-}
-
-/*-----------------------------*/
-
 /*Profile*/
 .doctor-patrick-profile-section {
     background-color: var(--theme-color);
@@ -616,6 +606,62 @@ footer .number-deco {
 /*------Media Queries-------*/
 @media only screen and (max-width: 760px),
 (min-device-width: 768px) and (max-device-width: 1024px){
+    .carousell-container .banner-item .text-container-one {
+        position: absolute;
+        top: 20%;
+        left: 55%;
+        right: 19%;
+        line-height: 30px;
+    }
+    
+    .carousell-container .banner-item .text-container-two {
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        right: 45%;
+        line-height: 30px;
+    }
+    
+    .carousell-container .banner-item .text-container-three {
+        position: absolute;
+        top: 20%;
+        left: 36%;
+        right: 10%;
+    }
+    
+    .carousell-container .banner-item .text-container-four {
+        position: absolute;
+        background-color: rgba(57, 55, 55, 0.7);
+        padding: 25px;
+        color: white;
+        top: 20%;
+        left: 25%;
+        right: 10%;
+    }
+    
+    .carousell-container .banner-item .text-container-five {
+        position: absolute;
+        top: 35%;
+        right: 45%;
+    }
+    
+    .carousell-container .banner-item .text-container-six {
+        position: absolute;
+        top: 30%;
+        left: 65%;
+        right: 5%;
+    }
+    
+    .carousell-container .banner-item  h1 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    
+    .carousell-container .banner-item  p {
+        font-size: 15px;
+    }
+    
+
     .testimonials-banner-image .content-wrap{
         height: 400px;
         width: auto;
@@ -654,7 +700,7 @@ footer .number-deco {
 
 @media (min-width: 992px)  {
     .treatment-description-2 .crop-image {
-        height: 700px;
+        height: 500px;
         overflow: hidden;
     }
 
