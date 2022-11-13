@@ -540,7 +540,7 @@ footer .number-deco {
     position: absolute;
     font-size: 50px;
     color: white;
-    top: 70%;
+    top: 65%;
   left: 50%;
   transform: translate(-50%, -50%);
     
@@ -555,11 +555,11 @@ footer .number-deco {
     width: 100%;
 }
 
-.treatment-description .row .col .margin-custom {
+.treatment-description .col .margin-custom {
     padding-left: 100px;
 }
 
-.treatment-description .row .col .smaller-desc {
+.treatment-description .col .smaller-desc {
     margin-left: 100px;
     margin-right: 20px;
 }
@@ -614,11 +614,41 @@ footer .number-deco {
 /*-----*/
 
 /*------Media Queries-------*/
-@media (min-width: 480px){
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px){
     .testimonials-banner-image .content-wrap{
         height: 400px;
         width: auto;
         overflow: hidden;
+    }
+
+    .banner-image img {
+        width: 100%;
+        height: 400px;
+        overflow: hidden;
+    }
+
+    .treatment-description .col .margin-custom {
+        padding-left: 10px;
+    }
+    
+    .treatment-description .col .smaller-desc {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .treatment-description-2 .words-desc {
+        text-align: center;
+        
+    }
+    .treatment-description-2 .words-desc table {
+        margin: auto;   
+    }
+
+    .sylfirm-x-procedure-section table,
+    .sylfirm-x-procedure-section td,
+    .sylfirm-x-procedure-section tr{
+        display: block;
     }
 }
 
@@ -636,6 +666,15 @@ footer .number-deco {
 
     .testimonials-card .card .card-text{
         margin-right: 150px;
+    }
+
+    .banner-image img {
+        width: 100%;
+    }
+
+    .treatment-description-2 .words-desc {
+        text-align: right;
+        float: inline-end;
     }
 }
 /*-------------------------*/
