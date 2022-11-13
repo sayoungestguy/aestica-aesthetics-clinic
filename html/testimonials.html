@@ -22,7 +22,7 @@
     <!--font awesome lib-->
     <script src="https://kit.fontawesome.com/c7aac31286.js" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -88,38 +88,55 @@
     </section>
     <!--Testimonials-->
     <section class="all-testimonials-segment py-lg-5">
-        <div class="container">
-            <div class="list-of-testimonials">
-                <div class="testimonials-card mx-lg-5 py-lg-3">
+        <div class="container" data-aos="fade-up">
+            <div class="list-of-testimonials" >
+              <div class="testimonials-card mx-lg-5 py-lg-3">
+                <div class="card border-0 mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title text-center text-md-start text-lg-start">Thread Face Lift</h5>
+                                <h5 class="card-title fst-italic text-center text-md-start text-lg-start">Cindy Xue
+                                </h5>
+                                <p class="card-text text-center text-md-start text-lg-start">"I had been looking for
+                                    a place to get my face lifting done for months and my friend recommended
+                                    Aestica. I must say, it was one of the best experiences I have had. The staff
+                                    were all very professional, friendly and the treatment I got was fairly priced.
+                                    The atmosphere of the clinic is relaxing and this will be my new go-to place"
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="../assets/img/testimonial_1.png" class="img-fluid rounded-start"
+                                alt="Cindy Xue, Social Media Influencer">
+                        </div>
+                    </div>
+                </div>
+            </div>
+                <div class="testimonials-card mx-lg-5 py-lg-3" >
                     <div class="card border-0 mb-3">
                         <div class="row g-0">
                             <div class="col-md-8">
                                 <div class="card-body">
-                                    <h5 class="card-title text-center text-md-start text-lg-start">Under Eye Fillers
-                                    </h5>
-                                    <h5 class="card-title fst-italic text-center text-md-start text-lg-start">Licy
-                                        Santiago</h5>
-                                    <p class="card-text text-center text-md-start text-lg-start">
-                                        "Went for a number of treatments at Aestica so so much I notice the workers
-                                        there
-                                        friendly. particularly whenever i am going for my Eye treatments, i will
-                                        rummage around for Penny 'cuz shes sensible at what she's doing and conjointly
-                                        bubbly to talk with. The doctors there were very
-                                        friendly and perpetually gets my Under Eye Fillers done well and with little
-                                        pain.
-                                        The doctors also are knowledgeable 'cuz i favor asking alot of questions on the
-                                        treatments and they are ready to let ME absolutely perceive what is obtaining
-                                        done and every one. Would def suggest friends to undertake their services out.
-                                        🙂"</p>
+                                    <h5 class="card-title text-center text-md-start text-lg-start">Sylfirm X</h5>
+                                    <h5 class="card-title fst-italic text-center text-md-start text-lg-start">Lucy S.
+                                        Fernandez</h5>
+                                    <p class="card-text text-center text-md-start text-lg-start">"I was really nervous
+                                        going into my appointment with Aestica because they were my first time getting
+                                        anything done. I read some reviews online and they all said that the staff at
+                                        Aestica were super professional and everything went really smoothly. I felt like
+                                        a million bucks afterwards, so I'm glad I went to them. Thank you for making me
+                                        feel beautiful!"</p>
                                 </div>
                             </div>
                             <div class="col-md-4">
-                                <img src="../assets/img/testimonial_main.png" class="img-fluid rounded-start"
-                                    alt="Licy Santiago, Social Media Manager">
+                                <img src="../assets/img/testimonial_2.png" class="img-fluid rounded-start"
+                                    alt="Lucy S. Fernandez, Expat">
                             </div>
                         </div>
                     </div>
                 </div>
+                
                 <div class="testimonials-card mx-lg-5 py-lg-3">
                     <div class="card border-0 mb-3">
                         <div class="row g-0">
@@ -143,128 +160,112 @@
                         </div>
                     </div>
                 </div>
-                <div class="testimonials-card mx-lg-5 py-lg-3">
-                    <div class="card border-0 mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title text-center text-md-start text-lg-start">Thread Face Lift</h5>
-                                    <h5 class="card-title fst-italic text-center text-md-start text-lg-start">Cindy Xue
-                                    </h5>
-                                    <p class="card-text text-center text-md-start text-lg-start">"I had been looking for
-                                        a place to get my face lifting done for months and my friend recommended
-                                        Aestica. I must say, it was one of the best experiences I have had. The staff
-                                        were all very professional, friendly and the treatment I got was fairly priced.
-                                        The atmosphere of the clinic is relaxing and this will be my new go-to place"
-                                    </p>
+                <div class="collapse" id="collapseExample">
+                    <div class="testimonials-card mx-lg-5 py-lg-3">
+                        <div class="card border-0 mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center text-md-start text-lg-start">Under Eye Fillers
+                                        </h5>
+                                        <h5 class="card-title fst-italic text-center text-md-start text-lg-start">Licy
+                                            Santiago</h5>
+                                        <p class="card-text text-center text-md-start text-lg-start">
+                                            "Went for a number of treatments at Aestica so so much I notice the workers
+                                            there
+                                            friendly. particularly whenever i am going for my Eye treatments, i will
+                                            rummage around for Penny 'cuz shes sensible at what she's doing and conjointly
+                                            bubbly to talk with. The doctors there were very
+                                            friendly and perpetually gets my Under Eye Fillers done well and with little
+                                            pain.
+                                            The doctors also are knowledgeable 'cuz i favor asking alot of questions on the
+                                            treatments and they are ready to let ME absolutely perceive what is obtaining
+                                            done and every one. Would def suggest friends to undertake their services out.
+                                            🙂"</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img src="../assets/img/testimonial_1.png" class="img-fluid rounded-start"
-                                    alt="Cindy Xue, Social Media Influencer">
+                                <div class="col-md-4">
+                                    <img src="../assets/img/testimonial_main.png" class="img-fluid rounded-start"
+                                        alt="Licy Santiago, Social Media Manager">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="testimonials-card mx-lg-5 py-lg-3">
-                    <div class="card border-0 mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title text-center text-md-start text-lg-start">Sylfirm X</h5>
-                                    <h5 class="card-title fst-italic text-center text-md-start text-lg-start">Lucy S.
-                                        Fernandez</h5>
-                                    <p class="card-text text-center text-md-start text-lg-start">"I was really nervous
-                                        going into my appointment with Aestica because they were my first time getting
-                                        anything done. I read some reviews online and they all said that the staff at
-                                        Aestica were super professional and everything went really smoothly. I felt like
-                                        a million bucks afterwards, so I'm glad I went to them. Thank you for making me
-                                        feel beautiful!"</p>
+                    <div class="testimonials-card mx-lg-5 py-lg-3">
+                        <div class="card border-0 mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center text-md-start text-lg-start">Thread Face Lifting
+                                        </h5>
+                                        <h5 class="card-title fst-italic text-center text-md-start text-lg-start">Lee Wei
+                                            Wei
+                                        </h5>
+                                        <p class="card-text text-center text-md-start text-lg-start">
+                                            My initial thread face lifting at Aestecia was quiet and refreshing. The clinic
+                                            was sort of a 'haven' from the hustle & bustle. Dr Bob & his team are friendly &
+                                            skilled. The expert was very sensible as well. It made my face felt comfortable
+                                            and there was a great transformation. I'd
+                                            like to recommend this treatment for anyone. I shall definitely be back!</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img src="../assets/img/testimonial_2.png" class="img-fluid rounded-start"
-                                    alt="Lucy S. Fernandez, Expat">
+                                <div class="col-md-4">
+                                    <img src="../assets/img/testimonial_3.png" class="img-fluid rounded-start"
+                                        alt="Lee Wei Wei, Talent at Madial Odial Cinematics">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="testimonials-card mx-lg-5 py-lg-3">
-                    <div class="card border-0 mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title text-center text-md-start text-lg-start">Thread Face Lifting
-                                    </h5>
-                                    <h5 class="card-title fst-italic text-center text-md-start text-lg-start">Lee Wei
-                                        Wei
-                                    </h5>
-                                    <p class="card-text text-center text-md-start text-lg-start">
-                                        My initial thread face lifting at Aestecia was quiet and refreshing. The clinic
-                                        was sort of a 'haven' from the hustle & bustle. Dr Bob & his team are friendly &
-                                        skilled. The expert was very sensible as well. It made my face felt comfortable
-                                        and there was a great transformation. I'd
-                                        like to recommend this treatment for anyone. I shall definitely be back!</p>
+                    <div class="testimonials-card mx-lg-5 py-lg-3">
+                        <div class="card border-0 mb-3">
+                            <div class="row g-0">
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center text-md-start text-lg-start">HIFU
+                                        </h5>
+                                        <h5 class="card-title fst-italic text-center text-md-start text-lg-start">Esther Low
+                                        </h5>
+                                        <p class="card-text text-center text-md-start text-lg-start">
+                                            My consultation with Dr Patrick was very successful. He listened carefully to my concerns
+                                        and took the time to explain to me what to expect during and after my procedure. I received exceptional care. 
+                                        It's been an overall great experience and I can't wait to come back for more
+                                        treatments!</p>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img src="../assets/img/testimonial_3.png" class="img-fluid rounded-start"
-                                    alt="Lee Wei Wei, Talent at Madial Odial Cinematics">
+                                <div class="col-md-4">
+                                    <img src="../assets/img/testimonial_6.jpg" class="img-fluid rounded-start"
+                                        alt="Esther Low, Local Content Creator">
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="testimonials-card mx-lg-5 py-lg-3">
-                    <div class="card border-0 mb-3">
-                        <div class="row g-0">
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h5 class="card-title text-center text-md-start text-lg-start">HIFU
-                                    </h5>
-                                    <h5 class="card-title fst-italic text-center text-md-start text-lg-start">Esther Low
-                                    </h5>
-                                    <p class="card-text text-center text-md-start text-lg-start">
-                                        My initial thread face lifting at Aestecia was quiet and refreshing. The clinic
-                                        was sort of a 'haven' from the hustle & bustle. Dr Bob & his team are friendly &
-                                        skilled. The expert was very sensible as well. It made my face felt comfortable
-                                        and there was a great transformation. I'd
-                                        like to recommend this treatment for anyone. I shall definitely be back!</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <img src="../assets/img/testimonial_6.jpg" class="img-fluid rounded-start"
-                                    alt="Esther Low, Local Content Creator">
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                  </div>
             </div>
             <div class="btns-container text-center">
-                <button type="submit" class="text-center btn text-uppercase rounded-5 px-5 py-1">More
+                <button type="button" class="text-center btn text-uppercase rounded-5 px-5 py-1" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">More
                     Testimonials</button>
             </div>
         </div>
     </section>
     <!--Book your consultation-->
-    <section class="book-appointment-segment py-5 py-lg-5">
-        <div class="container">
-            <div class="text-container spectral-sc mb-3">
-                <h1 class="text-uppercase text-center text-lg-start fs-40">Book Your Consultation TODAY!</h1>
-            </div>
-            <div class="form-container justify-content-sm-evenly justify-content-lg-start">
-                <span class="description spectral-sc py-sm-2">Get started with an online consultation today by filling
-                    out quick
-                    appointment form.</span>
-                <form class="d-sm-block d-lg-flex my-3 mx-auto my-lg-0 mx-lg-0 row" action="#">
-                    <input class="col-lg-3 my-1 mx-lg-3" type="text" placeholder="Full Name">
-                    <input class="col-lg-6 my-1 mx-lg-2 align-items-sm-center" type="email" placeholder="Email">
-                    <button type="submit"
-                        class="text-center btn rounded-5 text-uppercase my-1 px-lg-2 py-lg-1 mx-lg-3 text-white col-lg-2">Book
-                        Consultation</button>
-                </form>
-            </div>
-        </div>
-    </section>
+  <section class="book-appointment-segment py-5 py-lg-5">
+    <div class="container">
+      <div class="text-container spectral-sc mb-3 " data-aos="fade-right">
+        <h1 class="text-uppercase text-center text-lg-start fs-40">Book Your Consultation TODAY!</h1>
+      </div>
+      <div class="form-container justify-content-sm-evenly justify-content-lg-start" data-aos="fade-right">
+        <span class="description spectral-sc py-sm-2">Get started with an online consultation today by filling out this quick
+          appointment form.</span>
+        <form class="d-sm-block d-lg-flex my-3 mx-auto my-lg-0 mx-lg-0 row" action="#">
+          <input class="col-lg-3 my-1 mx-lg-3" type="text" placeholder="Full Name">
+          <input class="col-lg-6 my-1 mx-lg-2 align-items-sm-center" type="email" placeholder="Email">
+          <button type="submit"
+            class="text-center btn rounded-5 text-uppercase my-1 px-lg-2 py-lg-1 mx-lg-3 text-white col-lg-2">Book
+            Consultation</button>
+        </form>
+      </div>
+    </div>
+  </section>
 
     <!--Footer -->
     <footer class="text-center text-lg-start py-lg-5">
@@ -344,19 +345,19 @@
           <div class="container">
             <div class="row mx-lg-5 text-center">
               <div class="nav-page col">
-                <a class="text-uppercase" href="index.html">Home</a>
+                <a class="text-uppercase" href="../index.html">Home</a>
               </div>
               <div class="nav-page col">
-                <a class="text-uppercase" href="html/profile.html">Profile</a>
+                <a class="text-uppercase" href="profile.html">Profile</a>
               </div>
               <div class="nav-page col">
-                <a class="text-uppercase" href="html/testimonials.html">Testimonails</a>
+                <a class="text-uppercase" href="testimonials.html">Testimonails</a>
               </div>
               <div class="nav-page col">
-                <a class="text-uppercase" href="html/blog.html">Blog</a>
+                <a class="text-uppercase" href="blog.html">Blog</a>
               </div>
               <div class="nav-page col">
-                <a class="text-uppercase" href="html/contact-us.html">Contact</a>
+                <a class="text-uppercase" href="contact-us.html">Contact</a>
               </div>
             </div>
           </div>
@@ -375,6 +376,11 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
         integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
         crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
 </body>
 
 </html>
